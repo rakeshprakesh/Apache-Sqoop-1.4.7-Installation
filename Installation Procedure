@@ -1,9 +1,9 @@
 Apache Sqoop 1.4.7 Installation in Hadoop 
 
-Step 1:  wget https://archive.apache.org/dist/sqoop/1.4.7/sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz
-Step 2:  tar -xzf sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz
-Step 3:  mv sqoop-1.4.7.bin__hadoop-2.6.0 sqoop
-Step 4:  Add below two lines in .bashrc
+Step 1:  wget https://archive.apache.org/dist/sqoop/1.4.7/sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz (Downloads Apache Sqoop 1.4.7 Binary)
+Step 2:  tar -xzf sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz (Unzips Apache Sqoop Binary)
+Step 3:  mv sqoop-1.4.7.bin__hadoop-2.6.0 sqoop (Renames the directory to 'sqoop')
+Step 4:  Add below two lines in .bashrc 
 
 vi .bashrc
 
@@ -14,4 +14,13 @@ $export PATH=$PATH:$SQOOP_HOME/bin
 
 Step 5: source .bashrc
 Step 6: cd sqoop/conf/; cp sqoop-env-template.sh sqoop-env.sh
-Step 7: 
+Step 7: Add below two lines in sqoop-env.sh file
+
+vi sqoop-env.sh
+
+export HADOOP_COMMON_HOME=/home/cloudadmin/hadoop
+export HADOOP_MAPRED_HOME=/home/cloudadmin/hadoop
+
+:wq!
+
+Step 8: sqoop-version (Checks Apache Sqoop version)
