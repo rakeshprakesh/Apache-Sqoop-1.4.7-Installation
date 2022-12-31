@@ -1,4 +1,4 @@
-Apache Sqoop 1.4.7 Installation in Hadoop 
+Apache Sqoop 1.4.7 Installation in Ubuntu 20.04 
 
 Step 1:  wget https://archive.apache.org/dist/sqoop/1.4.7/sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz (Downloads Apache Sqoop 1.4.7 Binary)
 Step 2:  tar -xzf sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz (Unzips Apache Sqoop Binary)
